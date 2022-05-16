@@ -1,0 +1,53 @@
+@font-face{
+    font-family: RobotoRegular;
+    src: url('./font/Roboto-Regular.ttf');
+}
+
+/* init */
+html{
+    font-size: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+    overflow: hidden;
+    position: absolute;
+}
+div#wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* text container */
+div.text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+    overflow: hidden;
+    flex: 1;
+    font-family: RobotoRegular;
+}
+
+
+/* left text */
+div.text{
+    font-size: 1.2rem;
+    overflow: hidden;
+    color: #32eaff;
+}
+div.text span{
+    white-space: nowrap;
+    text-overflow: clip;
+}
