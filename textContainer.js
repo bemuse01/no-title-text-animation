@@ -4,7 +4,7 @@ const createUuid = (l = undefined, hex = '0123456789abcdef') => {
     return `${rand}${len === 0 ? '' : '-'}xxxxxxxx`.replace(/[x]/g, () => hex[~~(Math.random() * hex.length)]).toUpperCase()
 }
 
-export default {
+const TextContainer = {
     template: `
         <div class="text-container">
             <div 
